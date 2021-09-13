@@ -977,6 +977,17 @@
             video.src = ""
         }
     </script>
+    <!-- Btn go home -->
+    <script>
+        document.addEventListener("scroll", function() {
+            if (window.scrollY <= 1000) {
+                document.querySelector('.btn-go-home').classList.add('display-none');
+            } else {
+                document.querySelector('.btn-go-home').classList.remove('display-none');
+            }
+        })
+    </script>
+    
 </body>
 
 </html>
